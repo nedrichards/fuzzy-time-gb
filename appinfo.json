@@ -1,0 +1,22 @@
+{
+  "uuid": "2317a46c-182b-4a52-a065-53d26c5cb2f4",
+  "shortName": "Fuzzy Time GB",
+  "longName": "Fuzzy Time GB",
+  "companyName": "Nick Richards",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": true
+  },
+ "appKeys": {},
+  "resources": {
+    "media": [
+      {
+        "menuIcon": true,
+        "type": "png",
+        "name": "IMAGE_MENU_ICON",
+        "file": "images/menu_icon_fuzzy_watch.png"
+      }
+    ]
+  }
+}
