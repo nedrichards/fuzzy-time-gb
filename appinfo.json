@@ -1,22 +1,37 @@
 {
-  "uuid": "2317a46c-182b-4a52-a065-53d26c5cb2f4",
-  "shortName": "Fuzzy Time GB",
-  "longName": "Fuzzy Time GB",
-  "companyName": "Nick Richards",
-  "versionCode": 1,
-  "versionLabel": "1.0.0",
-  "watchapp": {
-    "watchface": true
-  },
- "appKeys": {},
-  "resources": {
-    "media": [
-      {
-        "menuIcon": true,
-        "type": "png",
-        "name": "IMAGE_MENU_ICON",
-        "file": "images/menu_icon_fuzzy_watch.png"
-      }
-    ]
-  }
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "Nick Richards",
+    "longName": "Fuzzy Time GB",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "characterRegex": "[A-Za-z0-9_ .]",
+                "file": "fonts/Arvo-Regular.ttf",
+                "name": "ARVO_REGULAR_24",
+                "type": "font"
+            },
+            {
+                "file": "images/menu_icon_fuzzy_watch.png",
+                "menuIcon": true,
+                "name": "IMAGE_MENU_ICON",
+                "type": "png"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Fuzzy Time GB",
+    "targetPlatforms": [
+        "aplite",
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "2317a46c-182b-4a52-a065-53d26c5cb2f4",
+    "versionLabel": "1.1",
+    "watchapp": {
+        "watchface": true
+    }
 }

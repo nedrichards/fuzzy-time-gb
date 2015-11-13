@@ -5,6 +5,7 @@
 
 #define BUFFER_SIZE 86
 
+
 static struct CommonWordsData {
   TextLayer *label;
   Window *window;
@@ -26,15 +27,23 @@ static void do_init(void) {
   window_stack_push(s_data.window, animated);
 
   window_set_background_color(s_data.window, GColorBlack);
-  GFont font = fonts_get_system_font(FONT_KEY_DROID_SERIF_28_BOLD);
-
+  /* GFont font = fonts_get_system_font(FONT_KEY_DROID_SERIF_28_BOLD); */
+  GFont font = fonts_load_custom_font
+   (resource_get_handle(RESOURCE_ID_ARVO_REGULAR_24));
+ 
   Layer *root_layer = window_get_root_layer(s_data.window);
   GRect frame = layer_get_frame(root_layer);
-
+  
+  /*
   s_data.label = text_layer_create(GRect(0, 20, frame.size.w, frame.size.h - 20));
+  */
+  s_data.label = text_layer_create(
+        GRect(0, PBL_IF_ROUND_ELSE(58, 52), frame.size.w, 50));
+  
   text_layer_set_background_color(s_data.label, GColorBlack);
   text_layer_set_text_color(s_data.label, GColorWhite);
   text_layer_set_font(s_data.label, font);
+  text_layer_set_text_alignment(s_data.label, GTextAlignmentCenter);
   layer_add_child(root_layer, text_layer_get_layer(s_data.label));
 
   time_t now = time(NULL);
